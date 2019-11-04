@@ -18,10 +18,7 @@ namespace MoqExample.Repositories
         /// <returns>A list of grades</returns>
         public List<int> GetGrades(string studentId)
         {
-            return new List<int>()
-            {
-                100, 75, 80, 90, 95, 94, 87, 88, 67
-            };
+            throw new NotImplementedException("Not yet implemented");
         }
 
         /// <summary>
@@ -30,7 +27,7 @@ namespace MoqExample.Repositories
         /// <param name="student">The student entity to save</param>
         public void Save(Student student)
         {
-
+            throw new NotImplementedException("Not yet implemented");
         }
     }
 }
