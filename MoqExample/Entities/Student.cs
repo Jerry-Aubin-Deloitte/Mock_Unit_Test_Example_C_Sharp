@@ -59,7 +59,12 @@ namespace MoqExample.Entities
         /// </summary>
         public double GradeAverage
         {
-            get { return grades.Select(x => x.grade).ToList().Average(); }
+            get
+            { 
+                GetGrades();
+
+                return grades.Select(x => x.grade).ToList().Average();
+            }
         }
 
         /// <summary>
